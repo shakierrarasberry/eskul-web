@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id = "daftar">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+
+    </ul>
+    <script>
+        // var parent = document.getElementById("daftar");
+        // var unit = document.getElementsByTagName("p")
+
+        // var item1 = container.children[0]
+        // var item2 = container.children[1]
+        // var item3 = container.children[2]
+        // var item4 = container.children[3]
+
+        // console.log(container.children[0])
+        // console.log(container.children[1])
+        // console.log(container.children[2])
+        // console.log(container.children[3])
+
+        // var parent = document.getElementById("container2");
+        // console.log(container2.children[0])
+        var parent = document.getElementsByTagName("li");
+        // document.getElementsByTagName("P")
+        // console.log(parent[0])
+        // var parent = document.querySelector("#item")
+        // var parent = document.querySelectorAll("li")
+
+        // parent[0].innerText = "item 1 "
+        // parent[0].style.color = " purple "
+
+        // pengulangan
+        // for( var i = 4; i < parent.length; i++){
+        //    console.log(parent.innerText)
+        // }
+
+        var ul = document.getElementById("daftar")
+        console.log(ul.children.length)
+
+        //pengulangan
+        for( var parent of parent){
+            parent.style.color = "bolt purple "
+            console.log(parent)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0% ;
+        }
+        .persegipanjangpeyot{
+            height: 60px;
+            width: auto;
+            display: flex;
+            background-color: rgb(223, 231, 215);
+        }
+        .persegipanjanggendut{
+            background-color: rgb(223, 231, 215);
+            height:100px;
+        }
+       .pembungkus{
+        display: flex;
+        justify-content: space-around;
+       }
+        .anak{
+            width: 350px;
+            height: 350px;
+            background-color: bisque;
+        }
+        @media(max-width : 600px) AND (max-width : 900px){
+            .pembungkus{
+                flex-wrap: wrap;
+            }
+
+            .anak{
+                width: 98%;
+                margin-bottom:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="persegipanjangpeyot">.</div>
+    <br>
+    <div class="persegipanjanggendut">.</div>
+    <br>
+   <div class="pembungkus">
+        <div class="anak"></div>
+        <div class="anak"></div>
+        <div class="anak"></div>
+   </div>
+</body>
+</html>
